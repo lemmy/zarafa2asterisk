@@ -10,6 +10,8 @@
  ******************************************************************************/
 package org.kuppe.zarafa2asterisk;
 
+import java.io.IOException;
+
 import org.asteriskjava.fastagi.DefaultAgiServer;
 import org.asteriskjava.fastagi.MappingStrategy;
 import org.asteriskjava.fastagi.StaticMappingStrategy;
@@ -33,18 +35,32 @@ public class Activator implements BundleActivator {
 	public void start(BundleContext bundleContext) throws Exception {
 		Activator.context = bundleContext;
 
-        server = new DefaultAgiServer();
-        
-        // configure mapping strategy for asterisk-java
-        MappingStrategy mappingStrategy = new StaticMappingStrategy(new CallerIdAgiScript());
-        server.setMappingStrategy(mappingStrategy);
+		new Thread(new Runnable() {
+			
+			/* (non-Javadoc)
+			 * @see java.lang.Runnable#run()
+			 */
+			public void run() {
+		        server = new DefaultAgiServer();
+		        
+		        // configure mapping strategy for asterisk-java
+		        MappingStrategy mappingStrategy = new StaticMappingStrategy(new CallerIdAgiScript());
+                server.setMappingStrategy(mappingStrategy);
 
-        // configure the agi port
-        int port = Integer.parseInt(System.getProperty("org.kuppe.zarafa2asterisk.agi.port", "4573"));
-        server.setPort(port);
+                // configure the agi port
+                int port = Integer.parseInt(System.getProperty("org.kuppe.zarafa2asterisk.agi.port", "4573"));
+                server.setPort(port);
 
-        // finally run the server
-        server.startup();
+                // finally run the server
+                try {
+					server.startup();
+				} catch (IllegalStateException e) {
+					e.printStackTrace();
+				} catch (IOException e) {
+					e.printStackTrace();
+				}
+			}
+		}).start();
 	}
 
 	/*
