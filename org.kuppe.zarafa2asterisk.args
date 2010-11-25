@@ -1,6 +1,6 @@
 --platform=equinox
 --vmargs="-Dorg.kuppe.zarafa2asterisk.soapUrl=http://localhost/zarafa2ldap/mapiContacts.php"
---profiles=org.kuppe.zarafa2astersik
+--profiles=org.kuppe.zarafa2asterisk
 --profilesRepositories=https://scm.ops4j.org/repos/ops4j/projects/pax/runner-repository/,http://www.kuppe.org/maven
 
 
