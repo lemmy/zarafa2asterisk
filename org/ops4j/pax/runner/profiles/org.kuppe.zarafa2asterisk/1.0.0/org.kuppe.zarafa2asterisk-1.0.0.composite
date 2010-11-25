@@ -1,0 +1,13 @@
+scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/javax.activation_1.1.0.v201005080500.jar
+scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/javax.mail_1.4.0.v201005080615.jar
+scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/javax.wsdl_1.6.2.v201005080631.jar
+scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/javax.xml.rpc_1.1.0.v201005080400.jar
+scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/javax.xml.soap_1.3.0.v201005080502.jar
+scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/org.apache.axis_1.4.0.v201005080400.jar
+scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/org.apache.commons.discovery_0.2.0.v201004190315.jar
+scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/org.apache.commons.logging_1.1.1.v201005080502.jar
+scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/javax.servlet_2.5.0.v200910301333.jar
+
+scan-bundle:https://secure.reucon.net/nexus/content/repositories/opensource/org/asteriskjava/asterisk-java/1.0.0.M3/asterisk-java-1.0.0.M3.jar
+
+scan-bundle:https://github.com/lemmy/zarafa2asterisk/raw/master/binaries/org.kuppe.zarafa2asterisk_1.0.0.201011251932.jar
