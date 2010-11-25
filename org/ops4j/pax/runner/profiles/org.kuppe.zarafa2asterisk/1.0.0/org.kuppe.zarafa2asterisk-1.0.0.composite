@@ -8,6 +8,7 @@ scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S201010
 scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/org.apache.commons.logging_1.1.1.v201005080502.jar
 scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/javax.servlet_2.5.0.v200910301333.jar
 
-scan-bundle:https://secure.reucon.net/nexus/content/repositories/opensource/org/asteriskjava/asterisk-java/1.0.0.M3/asterisk-java-1.0.0.M3.jar
+#scan-bundle:https://secure.reucon.net/nexus/content/repositories/opensource/org/asteriskjava/asterisk-java/1.0.0.M3/asterisk-java-1.0.0.M3.jar
+scan-bundle:https://secure.reucon.net/nexus/content/repositories/opensource-snapshots/org/asteriskjava/asterisk-java/1.0.0.CI-SNAPSHOT/asterisk-java-1.0.0.CI-20101026.214540-382.jar
 
 scan-bundle:https://github.com/lemmy/zarafa2asterisk/raw/master/binaries/org.kuppe.zarafa2asterisk_1.0.0.201011252008.jar
