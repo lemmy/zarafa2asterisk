@@ -1,0 +1,3 @@
+0) Install the webservice part of zarafa2ldap (http://www.zarafaserver.de/integrations/zarafa-2-ldap-integration)
+1) Add "exten => _NNZ.,n,AGI(agi://localhost/)" to your dialplan (replace localhost with the host that is running zarafa2asterisk
+2) Fire up pax-runner and have it install zarafa2asterisk (make sure the system property "org.kuppe.zarafa2astersik.soapURL" points to the webservice from step 0.)

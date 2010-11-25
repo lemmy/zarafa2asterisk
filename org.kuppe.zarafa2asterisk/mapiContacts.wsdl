@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<definitions xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:SOAP-ENC="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://localhost/mapicontactsldapsoap" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://localhost/mapicontactsldapsoap">
+<types>
+<xsd:schema targetNamespace="http://localhost/mapicontactsldapsoap"
+>
+ <xsd:import namespace="http://schemas.xmlsoap.org/soap/encoding/" />
+ <xsd:import namespace="http://schemas.xmlsoap.org/wsdl/" />
+ <xsd:complexType name="contact">
+  <xsd:all>
+   <xsd:element name="uid" type="xsd:string"/>
+   <xsd:element name="email1address" type="xsd:string"/>
+   <xsd:element name="email2address" type="xsd:string"/>
+   <xsd:element name="email3address" type="xsd:string"/>
+   <xsd:element name="displayName" type="xsd:string"/>
+   <xsd:element name="surname" type="xsd:string"/>
+   <xsd:element name="givenname" type="xsd:string"/>
+   <xsd:element name="mobile" type="xsd:string"/>
+   <xsd:element name="telephoneNumber" type="xsd:string"/>
+   <xsd:element name="facsimileTelephoneNumber" type="xsd:string"/>
+   <xsd:element name="o" type="xsd:string"/>
+   <xsd:element name="ou" type="xsd:string"/>
+   <xsd:element name="street" type="xsd:string"/>
+   <xsd:element name="postalAddress" type="xsd:string"/>
+   <xsd:element name="postalCode" type="xsd:string"/>
+   <xsd:element name="homePostalAddress" type="xsd:string"/>
+   <xsd:element name="title" type="xsd:string"/>
+   <xsd:element name="homePhone" type="xsd:string"/>
+   <xsd:element name="description" type="xsd:string"/>
+   <xsd:element name="secretary" type="xsd:string"/>
+   <xsd:element name="pager" type="xsd:string"/>
+   <xsd:element name="employeeType" type="xsd:string"/>
+  </xsd:all>
+ </xsd:complexType>
+ <xsd:complexType name="users">
+  <xsd:all>
+   <xsd:element name="username" type="xsd:string"/>
+   <xsd:element name="contacts" type="tns:contactArray"/>
+  </xsd:all>
+ </xsd:complexType>
+ <xsd:complexType name="folders">
+  <xsd:all>
+   <xsd:element name="foldername" type="xsd:string"/>
+   <xsd:element name="contacts" type="tns:contactArray"/>
+  </xsd:all>
+ </xsd:complexType>
+ <xsd:complexType name="userArray">
+  <xsd:complexContent>
+   <xsd:restriction base="SOAP-ENC:Array">
+    <xsd:attribute ref="SOAP-ENC:arrayType" wsdl:arrayType="tns:users[]"/>
+   </xsd:restriction>
+  </xsd:complexContent>
+ </xsd:complexType>
+ <xsd:complexType name="folderArray">
+  <xsd:complexContent>
+   <xsd:restriction base="SOAP-ENC:Array">
+    <xsd:attribute ref="SOAP-ENC:arrayType" wsdl:arrayType="tns:folders[]"/>
+   </xsd:restriction>
+  </xsd:complexContent>
+ </xsd:complexType>
+ <xsd:complexType name="contactArray">
+  <xsd:complexContent>
+   <xsd:restriction base="SOAP-ENC:Array">
+    <xsd:attribute ref="SOAP-ENC:arrayType" wsdl:arrayType="tns:contact[]"/>
+   </xsd:restriction>
+  </xsd:complexContent>
+ </xsd:complexType>
+</xsd:schema>
+</types>
+<message name="getPrivateContactFoldersRequest"></message>
+<message name="getPrivateContactFoldersResponse">
+  <part name="user" type="tns:userArray" /></message>
+<message name="getPublicContactFoldersRequest"></message>
+<message name="getPublicContactFoldersResponse">
+  <part name="user" type="tns:folderArray" /></message>
+<portType name="mapicontactsldapsoapPortType">
+  <operation name="getPrivateContactFolders">
+    <documentation>Returns all users and their private contacts</documentation>
+    <input message="tns:getPrivateContactFoldersRequest"/>
+    <output message="tns:getPrivateContactFoldersResponse"/>
+  </operation>
+  <operation name="getPublicContactFolders">
+    <documentation>Returns all public folders and their contacts</documentation>
+    <input message="tns:getPublicContactFoldersRequest"/>
+    <output message="tns:getPublicContactFoldersResponse"/>
+  </operation>
+</portType>
+<binding name="mapicontactsldapsoapBinding" type="tns:mapicontactsldapsoapPortType">
+  <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+  <operation name="getPrivateContactFolders">
+    <soap:operation soapAction="http://localhost/mapicontactsldapsoap#getPrivateContactFolders" style="rpc"/>
+    <input><soap:body use="encoded" namespace="http://localhost/mapicontactsldapsoap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/></input>
+    <output><soap:body use="encoded" namespace="http://localhost/mapicontactsldapsoap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/></output>
+  </operation>
+  <operation name="getPublicContactFolders">
+    <soap:operation soapAction="http://localhost/mapicontactsldapsoap#getPublicContactFolders" style="rpc"/>
+    <input><soap:body use="encoded" namespace="http://localhost/mapicontactsldapsoap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/></input>
+    <output><soap:body use="encoded" namespace="http://localhost/mapicontactsldapsoap" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/></output>
+  </operation>
+</binding>
+<service name="mapicontactsldapsoap">
+  <port name="mapicontactsldapsoapPort" binding="tns:mapicontactsldapsoapBinding">
+    <soap:address location="http://zodiac.mkce.de/zarafa2ldap/mapiContacts.php"/>
+  </port>
+</service>
+</definitions>
