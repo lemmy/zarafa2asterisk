@@ -47,7 +47,7 @@ public class CallerIdAgiScript extends BaseAgiScript {
 
 				// read the soap url from the properties
 				String url = System
-						.getProperty("org.kuppe.zarafa2asterisk.soapUrl");
+						.getProperty("org.kuppe.zarafa2asterisk.soapUrl", "http://localhost/zarafa2ldap/mapiContacts.php");
 
 				// open a connection to the mapi webservice
 				final MapicontactsldapsoapLocator serviceLocator = new MapicontactsldapsoapLocator();
