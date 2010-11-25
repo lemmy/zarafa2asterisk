@@ -10,4 +10,4 @@ scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S201010
 
 scan-bundle:https://secure.reucon.net/nexus/content/repositories/opensource/org/asteriskjava/asterisk-java/1.0.0.M3/asterisk-java-1.0.0.M3.jar
 
-scan-bundle:https://github.com/lemmy/zarafa2asterisk/raw/master/binaries/org.kuppe.zarafa2asterisk_1.0.0.201011251932.jar
+scan-bundle:https://github.com/lemmy/zarafa2asterisk/raw/master/binaries/org.kuppe.zarafa2asterisk_1.0.0.201011252008.jar
