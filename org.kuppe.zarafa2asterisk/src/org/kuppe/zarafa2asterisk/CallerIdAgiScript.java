@@ -105,7 +105,7 @@ public class CallerIdAgiScript extends BaseAgiScript {
 				.hasNext();) {
 			final Contact contact = iterator.next();
 			if (matchesAnyPhoneNumber(incomingPhoneNumber, contact)) {
-				setCallerId(contact.getDisplayName());
+				setVariable("CALLERID(name)", contact.getDisplayName());
 				break;
 			}
 		}
