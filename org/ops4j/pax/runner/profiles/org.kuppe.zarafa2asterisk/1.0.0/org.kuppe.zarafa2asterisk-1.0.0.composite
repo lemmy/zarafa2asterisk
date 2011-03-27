@@ -16,6 +16,5 @@ scan-bundle:http://repository.springsource.com/ivy/bundles/external/org.apache.c
 scan-bundle:http://repository.springsource.com/ivy/bundles/external/org.apache.commons/com.springsource.org.apache.commons.net/1.4.1/com.springsource.org.apache.commons.net-1.4.1.jar
 
 scan-bundle:https://secure.reucon.net/nexus/content/repositories/opensource/org/asteriskjava/asterisk-java/1.0.0.M3/asterisk-java-1.0.0.M3.jar
-#scan-bundle:https://secure.reucon.net/nexus/content/repositories/opensource-snapshots/org/asteriskjava/asterisk-java/1.0.0.CI-SNAPSHOT/asterisk-java-1.0.0.CI-20101026.214540-382.jar
 
 scan-bundle:https://github.com/lemmy/zarafa2asterisk/raw/master/binaries/org.kuppe.zarafa2asterisk_1.0.0.201011252008.jar
