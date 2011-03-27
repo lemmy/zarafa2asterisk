@@ -1,19 +1,18 @@
-# springsource bundle repo
-scan-bundle:http://repository.springsource.com/ivy/bundles/external/javax.activation/com.springsource.javax.activation/1.1.1/com.springsource.javax.activation-1.1.1.jar
-scan-bundle:http://repository.springsource.com/ivy/bundles/external/javax.mail/com.springsource.javax.mail/1.4.1/com.springsource.javax.mail-1.4.1.jar
-scan-bundle:http://repository.springsource.com/ivy/bundles/external/javax.servlet/com.springsource.javax.servlet/2.5.0/com.springsource.javax.servlet-2.5.0.jar
-scan-bundle:http://repository.springsource.com/ivy/bundles/external/javax.xml.rpc/com.springsource.javax.xml.rpc/1.1.0/com.springsource.javax.xml.rpc-1.1.0.jar
-scan-bundle:http://repository.springsource.com/ivy/bundles/external/javax.xml.soap/com.springsource.javax.xml.soap/1.3.0/com.springsource.javax.xml.soap-1.3.0.jar
-scan-bundle:http://repository.springsource.com/ivy/bundles/external/javax.wsdl/com.springsource.javax.wsdl/1.6.1/com.springsource.javax.wsdl-1.6.1.jar
-scan-bundle:http://repository.springsource.com/ivy/bundles/external/javax.jms/com.springsource.javax.jms/1.1.0/com.springsource.javax.jms-1.1.0.jar
+# Eclispe orbit
+scan-bundle:http://ftp.halifax.rwth-aachen.de/eclipse/tools/orbit/downloads/drops/S20110304120314/repository/plugins/javax.activation_1.1.0.v201005080500.jar
+scan-bundle:http://ftp.halifax.rwth-aachen.de/eclipse/tools/orbit/downloads/drops/S20110304120314/repository/plugins/javax.mail_1.4.0.v201005080615.jar
+scan-bundle:http://ftp.halifax.rwth-aachen.de/eclipse/tools/orbit/downloads/drops/S20110304120314/repository/plugins/javax.servlet_2.5.0.v201103041518.jar
+scan-bundle:http://ftp.halifax.rwth-aachen.de/eclipse/tools/orbit/downloads/drops/S20110304120314/repository/plugins/javax.wsdl_1.6.2.v201012040545.jar
+scan-bundle:http://ftp.halifax.rwth-aachen.de/eclipse/tools/orbit/downloads/drops/S20110304120314/repository/plugins/javax.xml.rpc_1.1.0.v201005080400.jar
+scan-bundle:http://ftp.halifax.rwth-aachen.de/eclipse/tools/orbit/downloads/drops/S20110304120314/repository/plugins/javax.xml.soap_1.3.0.v201012031540.jar
 
-scan-bundle:http://repository.springsource.com/ivy/bundles/external/org.apache.axis/com.springsource.org.apache.axis/1.4.0/com.springsource.org.apache.axis-1.4.0.jar
+scan-bundle:http://ftp.halifax.rwth-aachen.de/eclipse/tools/orbit/downloads/drops/S20110304120314/repository/plugins/org.apache.axis_1.4.0.v201005080400.jar
 
-scan-bundle:http://repository.springsource.com/ivy/bundles/external/org.apache.commons/com.springsource.org.apache.commons.codec/1.4.0/com.springsource.org.apache.commons.codec-1.4.0.jar
-scan-bundle:http://repository.springsource.com/ivy/bundles/external/org.apache.commons/com.springsource.org.apache.commons.discovery/0.4.0/com.springsource.org.apache.commons.discovery-0.4.0.jar
-scan-bundle:http://repository.springsource.com/ivy/bundles/external/org.apache.commons/com.springsource.org.apache.commons.httpclient/3.1.0/com.springsource.org.apache.commons.httpclient-3.1.0.jar
-scan-bundle:http://repository.springsource.com/ivy/bundles/external/org.apache.commons/com.springsource.org.apache.commons.logging/1.1.1/com.springsource.org.apache.commons.logging-1.1.1.jar
-scan-bundle:http://repository.springsource.com/ivy/bundles/external/org.apache.commons/com.springsource.org.apache.commons.net/1.4.1/com.springsource.org.apache.commons.net-1.4.1.jar
+scan-bundle:http://ftp.halifax.rwth-aachen.de/eclipse/tools/orbit/downloads/drops/S20110304120314/repository/plugins/org.apache.commons.codec_1.3.0.v201101211617.jar
+scan-bundle:http://ftp.halifax.rwth-aachen.de/eclipse/tools/orbit/downloads/drops/S20110304120314/repository/plugins/org.apache.commons.discovery_0.2.0.v201004190315.jar
+scan-bundle:http://ftp.halifax.rwth-aachen.de/eclipse/tools/orbit/downloads/drops/S20110304120314/repository/plugins/org.apache.commons.httpclient_3.1.0.v201012070820.jar
+scan-bundle:http://ftp.halifax.rwth-aachen.de/eclipse/tools/orbit/downloads/drops/S20110304120314/repository/plugins/org.apache.commons.logging_1.1.1.v201101211721.jar
+scan-bundle:http://ftp.halifax.rwth-aachen.de/eclipse/tools/orbit/downloads/drops/S20110304120314/repository/plugins/org.apache.commons.net_2.2.0.v201101241833.jar
 
 scan-bundle:https://secure.reucon.net/nexus/content/repositories/opensource/org/asteriskjava/asterisk-java/1.0.0.M3/asterisk-java-1.0.0.M3.jar
 
