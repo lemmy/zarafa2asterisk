@@ -1,28 +1,19 @@
-# Eclispe orbit
-#scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/javax.activation_1.1.0.v201005080500.jar
-#scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/javax.mail_1.4.0.v201005080615.jar
-#scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/javax.wsdl_1.6.2.v201005080631.jar
-#scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/javax.xml.rpc_1.1.0.v201005080400.jar
-#scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/javax.xml.soap_1.3.0.v201005080502.jar
-#scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/org.apache.commons.discovery_0.2.0.v201004190315.jar
-#scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/org.apache.commons.logging_1.1.1.v201005080502.jar
-#scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/javax.servlet_2.5.0.v200910301333.jar
-#scan-bundle:ftp://ftp.osuosl.org/pub/eclipse/tools/orbit/downloads/drops/S20101014084557/repository/plugins/org.apache.axis_1.4.0.v201005080400.jar
-
 # springsource bundle repo
-scan-bundle:http://s9.springsource.com/repository/app/bundle/version/download?name=com.springsource.javax.activation&version=1.1.1&type=binary
-scan-bundle:http://s9.springsource.com/repository/app/bundle/version/download?name=com.springsource.javax.mail&version=1.4.1&type=binary
-scan-bundle:http://s9.springsource.com/repository/app/bundle/version/download?name=com.springsource.javax.servlet&version=2.5.0&type=binary
-scan-bundle:http://s9.springsource.com/repository/app/bundle/version/download?name=com.springsource.javax.xml.rpc&version=1.1.0&type=binary
-scan-bundle:http://s9.springsource.com/repository/app/bundle/version/download?name=com.springsource.javax.xml.soap&version=1.3.0&type=binary
-scan-bundle:http://s9.springsource.com/repository/app/bundle/version/download?name=com.springsource.javax.wsdl&version=1.6.1&type=binary
-scan-bundle:http://s9.springsource.com/repository/app/bundle/version/download?name=com.springsource.javax.jms&version=1.1.0&type=binary
-scan-bundle:http://s9.springsource.com/repository/app/bundle/version/download?name=com.springsource.org.apache.commons.codec&version=1.4.0&type=binary
-scan-bundle:http://s9.springsource.com/repository/app/bundle/version/download?name=com.springsource.org.apache.commons.net&version=1.4.1&type=binary
-scan-bundle:http://s9.springsource.com/repository/app/bundle/version/download?name=com.springsource.org.apache.commons.httpclient&version=3.1.0&type=binary
-scan-bundle:http://s9.springsource.com/repository/app/bundle/version/download?name=com.springsource.org.apache.axis&version=1.4.0&type=binary
-scan-bundle:http://s9.springsource.com/repository/app/bundle/version/download?name=com.springsource.org.apache.commons.discovery&version=0.4.0&type=binary
-scan-bundle:http://s9.springsource.com/repository/app/bundle/version/download?name=com.springsource.org.apache.commons.logging&version=1.1.1&type=binary
+scan-bundle:http://repository.springsource.com/ivy/bundles/external/javax.activation/com.springsource.javax.activation/1.1.1/com.springsource.javax.activation-1.1.1.jar
+scan-bundle:http://repository.springsource.com/ivy/bundles/external/javax.mail/com.springsource.javax.mail/1.4.1/com.springsource.javax.mail-1.4.1.jar
+scan-bundle:http://repository.springsource.com/ivy/bundles/external/javax.servlet/com.springsource.javax.servlet/2.5.0/com.springsource.javax.servlet-2.5.0.jar
+scan-bundle:http://repository.springsource.com/ivy/bundles/external/javax.xml.rpc/com.springsource.javax.xml.rpc/1.1.0/com.springsource.javax.xml.rpc-1.1.0.jar
+scan-bundle:http://repository.springsource.com/ivy/bundles/external/javax.xml.soap/com.springsource.javax.xml.soap/1.3.0/com.springsource.javax.xml.soap-1.3.0.jar
+scan-bundle:http://repository.springsource.com/ivy/bundles/external/javax.wsdl/com.springsource.javax.wsdl/1.6.1/com.springsource.javax.wsdl-1.6.1.jar
+scan-bundle:http://repository.springsource.com/ivy/bundles/external/javax.jms/com.springsource.javax.jms/1.1.0/com.springsource.javax.jms-1.1.0.jar
+
+scan-bundle:http://repository.springsource.com/ivy/bundles/external/org.apache.axis/com.springsource.org.apache.axis/1.4.0/com.springsource.org.apache.axis-1.4.0.jar
+
+scan-bundle:http://repository.springsource.com/ivy/bundles/external/org.apache.commons/com.springsource.org.apache.commons.codec/1.4.0/com.springsource.org.apache.commons.codec-1.4.0.jar
+scan-bundle:http://repository.springsource.com/ivy/bundles/external/org.apache.commons/com.springsource.org.apache.commons.discovery/0.4.0/com.springsource.org.apache.commons.discovery-0.4.0.jar
+scan-bundle:http://repository.springsource.com/ivy/bundles/external/org.apache.commons/com.springsource.org.apache.commons.httpclient/3.1.0/com.springsource.org.apache.commons.httpclient-3.1.0.jar
+scan-bundle:http://repository.springsource.com/ivy/bundles/external/org.apache.commons/com.springsource.org.apache.commons.logging/1.1.1/com.springsource.org.apache.commons.logging-1.1.1.jar
+scan-bundle:http://repository.springsource.com/ivy/bundles/external/org.apache.commons/com.springsource.org.apache.commons.net/1.4.1/com.springsource.org.apache.commons.net-1.4.1.jar
 
 scan-bundle:https://secure.reucon.net/nexus/content/repositories/opensource/org/asteriskjava/asterisk-java/1.0.0.M3/asterisk-java-1.0.0.M3.jar
 #scan-bundle:https://secure.reucon.net/nexus/content/repositories/opensource-snapshots/org/asteriskjava/asterisk-java/1.0.0.CI-SNAPSHOT/asterisk-java-1.0.0.CI-20101026.214540-382.jar
