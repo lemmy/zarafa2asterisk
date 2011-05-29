@@ -99,7 +99,7 @@
 </binding>
 <service name="mapicontactsldapsoap">
   <port name="mapicontactsldapsoapPort" binding="tns:mapicontactsldapsoapBinding">
-    <soap:address location="http://zodiac.mkce.de/zarafa2ldap/mapiContacts.php"/>
+    <soap:address location="http://localhost/mapiContacts.php"/>
   </port>
 </service>
 </definitions>
